@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YoakinTech Solutions - CSS Basics & Box Model Example">
+    <meta name="author" content="Maranata Afework">
+    <title>YoakinTech Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>YoakinTech Solutions</h1>
+        <p>Shaping Ethiopia’s Future with Technology & AI</p>
+    </header>
+
+    <main>
+        <!-- Lists Section -->
+        <section class="box-section">
+            <h2>Training Programs</h2>
+            <ul>
+                <li>Artificial Intelligence & Machine Learning</li>
+                <li>Full-Stack Web Development</li>
+                <li>Python Programming</li>
+                <li>Digital Literacy</li>
+            </ul>
+
+            <h3>Steps to Enroll</h3>
+            <ol>
+                <li>Select a program of interest</li>
+                <li>Submit your application form</li>
+                <li>Complete the admission process</li>
+                <li>Begin training</li>
+            </ol>
+        </section>
+
+        <!-- Table Section -->
+        <section class="box-section">
+            <h2>Upcoming Course Schedule</h2>
+            <table>
+                <caption>Training Timetable 2025</caption>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Start Date</th>
+                        <th>Duration</th>
+                        <th>Mode</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AI & Machine Learning Bootcamp</td>
+                        <td>2025-09-15</td>
+                        <td>8 Weeks</td>
+                        <td>Online</td>
+                    </tr>
+                    <tr>
+                        <td>Full-Stack Web Development</td>
+                        <td>2025-10-01</td>
+                        <td>10 Weeks</td>
+                        <td>Hybrid</td>
+                    </tr>
+                    <tr>
+                        <td>Python Programming for Beginners</td>
+                        <td>2025-10-15</td>
+                        <td>6 Weeks</td>
+                        <td>Onsite</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Form Section -->
+        <section class="box-section">
+            <h2>Application Form</h2>
+            <form action="/submit" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="0912345678" pattern="[0-9]{10,15}" required>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="nationality">Nationality:</label>
+                    <input type="text" id="nationality" name="nationality" value="Ethiopian" readonly>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Program Details</legend>
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="">--Choose a course--</option>
+                        <option value="ai">AI & Machine Learning Bootcamp</option>
+                        <option value="webdev">Full-Stack Web Development</option>
+                        <option value="python">Python Programming</option>
+                        <option value="digital">Digital Literacy</option>
+                    </select>
+
+                    <label>Preferred Mode:</label>
+                    <input type="radio" id="online" name="mode" value="Online" required>
+                    <label for="online">Online</label>
+
+                    <input type="radio" id="onsite" name="mode" value="Onsite">
+                    <label for="onsite">Onsite</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="comments">Why do you want to join?</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Share your motivation..." required></textarea>
+
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the terms and conditions
+                    </label>
+                </fieldset>
+
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 YoakinTech Solutions | Addis Ababa, Ethiopia</p>
+    </footer>
+</body>
+</html>
